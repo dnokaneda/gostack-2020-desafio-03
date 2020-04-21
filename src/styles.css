@@ -6,11 +6,23 @@
 
 body {
   font-size: 14px;
+  background: #7159c1;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 24px;
+  font-family: sans-serif;
+}
+
+body h1 {
+  color: #FFF;
+  margin-bottom: 24px;
+  text-align: center;
 }
 
 div {
-  width: 100%;
-  margin: 20px;
+  width: 500px;
 }
 
 div li {
@@ -23,17 +35,76 @@ div li + li {
 }
 
 button {
+  width: 100px;
   background: #7159c1;
   color: #fff;
   border: 0;
   padding: 10px 15px;
   cursor: pointer;
-  margin-top: 15px;
   font-weight: bold;
   font-size: 14px;
+  margin-left: 14px;
+  border-radius: 4px;
+  margin-left: 352px;
+  margin-top: 15px;
 }
 
 div li button {
+  width: 100px;
   margin: 0 15px;
   background: #ca4949;
+  border-radius: 4px;
+}
+
+div li label {
+  width: 350px;
+  padding-left: 18px;
+  background: #EFEFEF;
+  color: #212121;
+  border-radius: 4px;
+  height: 36px;
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+}
+
+.repository-body { 
+  background: #FFF;
+  border-radius: 8px;
+  padding: 24px 24px 24px 36px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.repository-body hr { 
+  border: 0.5px solid #7159c1; 
+  width: 100%; 
+  margin-left: -16px;
+  margin-bottom: 16px; 
+}
+
+.repository-body h1 { 
+  margin-bottom: 10px; 
+  color: #7159c1; }
+
+.repository-header {
+  padding-bottom: 14px;
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.repository-header input { 
+  width: 350px;
+  border-radius: 4px;
+  padding: 8px 8px 8px 8px;
+  height: 36px;
+  margin-left: -12px;  
+  border: 1px solid #7159c1;
 }

@@ -32,13 +32,15 @@ function App() {
   }
 
   return (
-    <div>
+    <div className="repository-body">
+      <h1> Desafio 03 - React JS </h1>
+      <hr />
       <ul data-testid="repository-list">
         
         { 
           repositories.map( item => 
             <li key={ item.id }>
-              { item.title }
+              <label>{ item.title }</label>
               <button onClick={ () => handleRemoveRepository( item.id )}> Remover </button>
             </li>  
             )
